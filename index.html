@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Playlist</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    
+    <div class="container">
+        <header>
+            <h1>Our Playlist</h1>
+            <p class="subtitle">Songs that remind us of each other</p>
+        </header>
+
+        <main>
+            <section class="player-section">
+                <h2>Listen Together</h2>
+                <div class="player-container">
+                    <iframe id="spotify-player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4Wsb4d7NKfP" 
+                            width="100%" height="380" frameborder="0" allowtransparency="true" 
+                            allow="encrypted-media"></iframe>
+                </div>
+                <div class="controls">
+                    <button id="theme-toggle">Dark Mode</button>
+                    <button id="visualizer-toggle">Visualizer: On</button>
+                </div>
+            </section>
+
+            <section class="dedications">
+                <h2>Our Song Stories</h2>
+                
+                <div class="dedication-card">
+                    <div class="song-info">
+                        <h3>Perfect</h3>
+                        <p class="artist">Ed Sheeran</p>
+                    </div>
+                    <div class="story">
+                        <p>This was playing during our first dance at the wedding. Every time I hear it, I'm transported back to that magical moment when it felt like we were the only two people in the world.</p>
+                    </div>
+                </div>
+
+                <div class="dedication-card">
+                    <div class="song-info">
+                        <h3>Yellow</h3>
+                        <p class="artist">Coldplay</p>
+                    </div>
+                    <div class="story">
+                        <p>You sang this to me on our camping trip when we stayed up all night watching the stars. I didn't know you could sing, and your voice under that starry sky was the most beautiful sound I'd ever heard.</p>
+                    </div>
+                </div>
+
+                <div class="dedication-card">
+                    <div class="song-info">
+                        <h3>Lover</h3>
+                        <p class="artist">Taylor Swift</p>
+                    </div>
+                    <div class="story">
+                        <p>We played this on repeat during our road trip to the coast. The lyrics perfectly captured how I felt about our relationship, and now it's "our song" that we always sing together in the car.</p>
+                    </div>
+                </div>
+
+                <div class="dedication-card">
+                    <div class="song-info">
+                        <h3>All of Me</h3>
+                        <p class="artist">John Legend</p>
+                    </div>
+                    <div class="story">
+                        <p>You played this on piano for me on our first anniversary. I cried the whole time, and now whenever we hear it, you squeeze my hand exactly at the part where I started crying that night.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created with love & music</p>
+            <p class="small">Refresh the page to change the visualizer colors</p>
+        </footer>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
